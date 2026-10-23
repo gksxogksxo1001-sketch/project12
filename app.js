@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 2. 3분 읽기 진행률 프로그레스 바
   const progressBar = document.getElementById('read-progress');
-  const narrativeSection = document.getElementById('narrative');
 
   window.addEventListener('scroll', () => {
     const winScroll = document.documentElement.scrollTop;
@@ -64,12 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 4. 이력서 모달 팝업 열기/닫기
   const btnOpenResume = document.getElementById('btn-open-resume');
+  const btnHeroResume = document.getElementById('btn-hero-resume');
   const resumeModal = document.getElementById('resume-modal');
   const btnCloseModal = document.getElementById('btn-close-modal');
   const btnCloseModalFooter = document.getElementById('btn-close-modal-footer');
   const modalContent = document.getElementById('modal-content');
 
-  function openResume() {
+  function openResume(e) {
+    if (e) e.preventDefault();
     resumeModal.classList.add('open');
     document.body.style.overflow = 'hidden';
 
@@ -78,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="resume-rendered">
         <h2>주한태 (Ju Han-tae) — 이력서 & 경력기술서</h2>
         <p><strong>지원 분야:</strong> IT 인프라 & 시스템/보안 엔지니어 | <strong>연락처:</strong> hantae.ju.it@gmail.com</p>
+        <p><strong>한 줄 소개:</strong> 2026년 10월 14일 이틀 연속 지각 앞에서 자책 대신 열 개의 알람을 맞춰 30분 먼저 강의실의 불을 켜는 사람</p>
         <hr style="margin: 16px 0; border: none; border-top: 1px solid var(--border-color);">
         
         <h3>1. 핵심 기술 역량</h3>
@@ -87,14 +89,18 @@ document.addEventListener('DOMContentLoaded', () => {
           <li><strong>Web & Data:</strong> Node.js, Express, 식약처 공공 영양DB API 연동, Vision OCR 파이프라인 구축</li>
         </ul>
 
-        <h3>2. 13주 리추얼 지속 훈련 (40일 완주)</h3>
-        <p>총 40일간 78회의 아침/마무리 리추얼 완수 (아침 100%, 저녁 95.0%). 이틀 연속 지각 후 알람 10개를 설정하여 24시간 이내에 30분 조기 도착으로 루틴을 완전 반전시킴.</p>
+        <h3>2. 13주 기록의 3대 출처 통계</h3>
+        <ul>
+          <li><strong>「내 출석 기록」:</strong> 출석 48일 / 50일 (출석률 96.0%), 지각 2회(10/13, 10/14) ➔ 알람 10개 설정으로 영구 정상화</li>
+          <li><strong>「리추얼 기록」:</strong> 40일 완주, 아침 40회(100%), 마무리 38회(95.0%), 호흡 143.0분</li>
+          <li><strong>「내 제출 현황」:</strong> 11개 과제 전원 100% 제출 및 10번 논문 51개 기준 전 항목 통과</li>
+        </ul>
 
         <h3>3. 대표 프로젝트</h3>
         <ul>
           <li><strong>과제 10 실증 연구 논문:</strong> AI 에이전트 대기시간 중 작업자 분할 주의 분석 (36개 세션 실측 CSV, 1초 검증기 구축)</li>
           <li><strong>팀 프로젝트 '혼밥비서':</strong> 영수증 Vision OCR 식재료 자동 등록 파이프라인 개발 및 식약처 Open API 연동</li>
-          <li><strong>과제 13 웹 애플리케이션:</strong> 실무형 분산 서비스 연동 예정 (Coming Soon)</li>
+          <li><strong>과제 13 웹 애플리케이션:</strong> 실무형 분산 서비스 연동 예정 (2026년 11월 13일 예정)</li>
         </ul>
 
         <div style="margin-top: 24px; padding: 12px; background: var(--bg-secondary); border-radius: 8px; font-size: 0.85rem;">
@@ -109,14 +115,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = '';
   }
 
-  btnOpenResume.addEventListener('click', openResume);
+  if (btnOpenResume) btnOpenResume.addEventListener('click', openResume);
+  if (btnHeroResume) btnHeroResume.addEventListener('click', openResume);
   btnCloseModal.addEventListener('click', closeResume);
   btnCloseModalFooter.addEventListener('click', closeResume);
   resumeModal.addEventListener('click', (e) => {
     if (e.target === resumeModal) closeResume();
   });
 
-  // ESC 키로 닫기
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && resumeModal.classList.contains('open')) {
       closeResume();

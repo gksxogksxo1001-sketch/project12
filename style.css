@@ -203,7 +203,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-  padding: 80px 0 60px;
+  padding: 70px 0 50px;
   background: radial-gradient(circle at 80% 20%, var(--bg-accent) 0%, transparent 60%);
   border-bottom: 1px solid var(--border-color);
 }
@@ -236,7 +236,7 @@ body {
   font-weight: 800;
   line-height: 1.25;
   letter-spacing: -0.02em;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .highlight-text {
@@ -246,67 +246,104 @@ body {
 }
 
 .hero-oneliner {
-  font-size: 1.25rem;
+  font-size: 1.22rem;
   color: var(--text-secondary);
   line-height: 1.6;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 
-.hero-actions {
+/* 첫 화면 4대 핵심 입구 (BRA-C03: 이야기·숫자·대표작·이력서) */
+.hero-portal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.portal-card {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 40px;
-}
-
-.btn {
-  display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-decoration: none;
+  gap: 14px;
+  padding: 18px 20px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-primary);
   transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
 }
 
-.btn-sm {
-  padding: 8px 16px;
+.portal-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.portal-icon {
+  font-size: 1.8rem;
+}
+
+.portal-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.portal-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.portal-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.portal-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.portal-arrow {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  transition: transform var(--transition-fast);
+}
+
+.portal-card:hover .portal-arrow {
+  transform: translateX(4px);
+  color: var(--accent-primary);
+}
+
+/* 한 줄 소개 후보 접이식 박스 */
+.oneliner-candidate-box {
+  background-color: var(--bg-secondary);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 12px 18px;
+  margin-bottom: 32px;
   font-size: 0.85rem;
 }
 
-.btn-primary {
-  background-color: var(--accent-primary);
-  color: #ffffff;
+.candidate-summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text-secondary);
 }
 
-.btn-primary:hover {
-  background-color: var(--accent-hover);
-  box-shadow: var(--shadow-glow);
-}
-
-.btn-secondary {
-  background-color: var(--bg-card);
-  color: var(--text-primary);
-  border: 1px solid var(--border-color);
-}
-
-.btn-secondary:hover {
-  background-color: var(--bg-card-hover);
-}
-
-.btn-outline {
-  background: transparent;
-  color: var(--text-primary);
-  border: 1px solid var(--border-color);
-}
-
-.btn-outline:hover {
-  border-color: var(--accent-primary);
+.candidate-summary:hover {
   color: var(--accent-primary);
+}
+
+.candidate-content {
+  margin-top: 12px;
+  padding-left: 20px;
+  line-height: 1.7;
+  color: var(--text-secondary);
 }
 
 .hero-meta-strip {
@@ -337,8 +374,26 @@ body {
   color: var(--text-primary);
 }
 
+.meta-val a {
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.meta-val a:hover {
+  color: var(--accent-primary);
+}
+
 .text-success {
   color: #10b981;
+}
+
+.text-danger {
+  color: #ef4444;
+}
+
+.text-info {
+  color: #0284c7;
 }
 
 /* Sections */
@@ -511,56 +566,93 @@ body {
   padding-top: 24px;
 }
 
-/* Metrics Grid */
-.metrics-grid {
+/* 3대 출처별 그리드 (BRA-C05) */
+.source-sections-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   margin-bottom: 40px;
 }
 
-.metric-card {
+.source-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 28px 24px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
-.metric-card:hover {
+.source-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
 }
 
-.metric-card.highlight {
+.highlight-source {
   border-color: var(--accent-primary);
   background: radial-gradient(circle at top right, var(--bg-accent), var(--bg-card));
 }
 
-.metric-icon {
-  font-size: 2rem;
+.source-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.source-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  background-color: var(--bg-secondary);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+}
+
+.source-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.source-stats {
+  margin-bottom: 16px;
+}
+
+.stat-main {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 12px;
 }
 
-.metric-value {
+.stat-num {
   font-size: 2.2rem;
   font-weight: 800;
+  letter-spacing: -0.02em;
   color: var(--text-primary);
-  letter-spacing: -0.03em;
-  margin-bottom: 6px;
 }
 
-.metric-label {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  margin-bottom: 4px;
-}
-
-.metric-sub {
-  font-size: 0.78rem;
+.stat-label {
+  font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  padding: 8px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.source-note {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  margin-top: auto;
 }
 
 /* Adversity Pairing Card */
@@ -591,7 +683,7 @@ body {
 }
 
 .pairing-title {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -690,7 +782,7 @@ body {
   font-weight: 600;
 }
 
-/* Projects Showcase */
+/* Projects Showcase (BRA-C06) */
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -792,7 +884,6 @@ body {
 .project-actions {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 12px;
   padding-top: 16px;
@@ -823,14 +914,76 @@ body {
 
 .pending-text {
   font-size: 0.9rem;
-  line-height: 1.5;
+  line-height: 1.6;
   color: var(--text-secondary);
+}
+
+.highlight-date {
+  color: var(--accent-primary);
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+.guidance-quote {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 4px;
 }
 
 .pending-desc {
   font-size: 0.85rem;
   color: var(--text-muted);
   line-height: 1.5;
+}
+
+/* Resume Preview Section */
+.resume-preview-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+}
+
+.resume-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 24px;
+}
+
+.resume-card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.resume-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.r-summary-item {
+  background-color: var(--bg-secondary);
+  padding: 18px;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.r-summary-item strong {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.r-summary-item p {
+  color: var(--text-secondary);
 }
 
 /* Engine Layout */
@@ -921,14 +1074,14 @@ body {
 
 .checklist-items {
   list-style: none;
-  margin-top: 20px;
+  margin-top: 16px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
 .checklist-items li {
-  font-size: 0.9rem;
+  font-size: 0.86rem;
   line-height: 1.5;
   color: var(--text-secondary);
   display: flex;
@@ -937,7 +1090,6 @@ body {
 
 .checklist-items li.checked {
   color: var(--text-primary);
-  font-weight: 500;
 }
 
 /* Footer */
@@ -969,6 +1121,56 @@ body {
 }
 
 .footer-links a:hover {
+  color: var(--accent-primary);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-sm {
+  padding: 6px 14px;
+  font-size: 0.8rem;
+}
+
+.btn-primary {
+  background-color: var(--accent-primary);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn-secondary {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-card-hover);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.btn-outline:hover {
+  border-color: var(--accent-primary);
   color: var(--accent-primary);
 }
 
@@ -1054,4 +1256,5 @@ body {
   .narrative-content-card { padding: 24px; }
   .pipeline-flow { flex-direction: column; }
   .flow-arrow { transform: rotate(90deg); margin: 6px 0; }
+  .hero-portal-grid { grid-template-columns: 1fr; }
 }

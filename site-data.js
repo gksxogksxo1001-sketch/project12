@@ -7,15 +7,59 @@ window.SITE_DATA = {
   "metadata": {
     "generatedAt": "2026-10-22",
     "sourceFile": "ritual-history-2026-10-22.txt",
-    "version": "1.2.0"
+    "version": "1.3.0"
   },
   "hero": {
     "name": "주한태",
     "nameEn": "Ju Han-tae",
     "title": "IT 인프라 & 시스템 엔지니어",
-    "oneLiner": "넘어지지 않은 사람이 아니라, 넘어진 그 자리에서 시스템을 고쳐 30분 먼저 불을 켜는 사람",
+    "oneLiner": "2026년 10월 14일 이틀 연속 지각 앞에서 자책 대신 열 개의 알람을 맞춰 30분 먼저 강의실의 불을 켜는 사람",
+    "oneLinerCandidates": [
+      "2026년 10월 14일 이틀 연속 지각 앞에서 자책 대신 열 개의 알람을 맞춰 30분 먼저 강의실의 불을 켜는 사람",
+      "2022년 화천 혹한의 불침번 복도에서 다짐한 결심으로 넘어진 시스템을 끝까지 고쳐 세우는 사람",
+      "40일간 100%의 아침 리추얼과 열 번의 알람으로 실패를 루틴의 회복으로 반전시키는 사람"
+    ],
+    "selectedReason": "날짜가 있는 실제 위기(10월 14일)와 구체적 시스템 해결책(알람 10개), 그리고 30분 조기 도착이라는 반전의 실행력을 가장 선명하게 드러내기 때문",
     "contactEmail": "hantae.ju.it@gmail.com",
     "githubUrl": "https://github.com/gksxogksxo1001-sketch/project12"
+  },
+  "sourcesData": {
+    "attendance": {
+      "sourceName": "내 출석 기록",
+      "totalDays": 50,
+      "attendedDays": 48,
+      "attendanceRate": "96.0%",
+      "lateCount": 2,
+      "absentCount": 0,
+      "lateDates": [
+        "2026-10-13",
+        "2026-10-14"
+      ],
+      "adversityPaired": true,
+      "description": "10월 13일, 14일 2회 지각 후 알람 10개 설정으로 영구 정상화 (지각 2일 외 전일 100% 출석)"
+    },
+    "ritual": {
+      "sourceName": "리추얼 기록",
+      "file": "ritual-history-2026-10-22.txt",
+      "totalDays": 40,
+      "period": "2026-08-11 ~ 2026-10-22",
+      "morningCount": 40,
+      "morningRate": "100.0%",
+      "eveningCount": 38,
+      "eveningRate": "95.0%",
+      "breathingMinutes": 143,
+      "avgBreathMinutes": 3.58,
+      "totalSessions": 78,
+      "feedbackCount": 43
+    },
+    "submissions": {
+      "sourceName": "내 제출 현황",
+      "totalTasks": 11,
+      "submittedTasks": 11,
+      "submissionRate": "100%",
+      "project10AuditStatus": "51개 통과 기준 100% 충족 Pass (T10-C01 ~ T10-C51)",
+      "project11Manuscript": "장편소설 원고 3만 자 이상 완비 제출 완료"
+    }
   },
   "metrics": {
     "totalDays": 40,
@@ -33,11 +77,11 @@ window.SITE_DATA = {
       "timeline": [
         {
           "date": "2026-10-13",
-          "event": "첫 지각 발생 - \"오늘의 나는 바보다\" (자책과 경각심)"
+          "event": "첫 지각 발생 - \"오늘의 나는 바보다\" (출석 기록 출처)"
         },
         {
           "date": "2026-10-14",
-          "event": "이틀 연속 지각 - \"내일도 늦으면 내가 개다\" (위기의 임계점)"
+          "event": "이틀 연속 지각 - \"내일도 늦으면 내가 개다\" (위기의 정점)"
         },
         {
           "date": "2026-10-15",
@@ -45,7 +89,7 @@ window.SITE_DATA = {
         },
         {
           "date": "2026-10-16",
-          "event": "남들보다 30분 먼저 강의실 문을 열고 조기 도착 ➔ 동료의 질문을 여유 있게 서포트"
+          "event": "남들보다 30분 먼저 강의실 문을 열고 조기 도착 ➔ 동료의 정처기 질문을 여유 있게 서포트"
         }
       ],
       "recoveryHours": 24,
@@ -99,6 +143,8 @@ window.SITE_DATA = {
         "1초 검증기"
       ],
       "status": "완료 및 검증 통과 (51개 기준 100% 충족)",
+      "localViewUrl": "paper/index.html",
+      "githubUrl": "https://github.com/gksxogksxo1001-sketch/project10",
       "keyFindings": [
         "비동기적 실체 검증 행동의 지배성: 대기시간 16초 이상 시 화면/콘솔 에러 검증(54.5%~66.7%) 집중",
         "시각적 폴링(Visual Polling) 비용: 평균 12.7초 간격으로 경계 감시 상태 지속 (발생률 91.7%)",
@@ -117,6 +163,7 @@ window.SITE_DATA = {
         "Coming Soon"
       ],
       "status": "13번 마친 뒤 채움 (준비 중 슬롯)",
+      "expectedDate": "2026년 11월 13일 (예정)",
       "keyFindings": [
         "과제 안내 규정에 따라 현재 대표작 자리를 비워 두고, 13번 프로젝트 완주 직후 상세 아키텍처 및 라이브 데모 채움 예정"
       ],
