@@ -1,7 +1,7 @@
 # 📄 주한태 (Ju Han-tae) — 이력서 · 자기소개서 · 경력기술서
 
 > **지원 분야**: IT 인프라 & 시스템/보안 엔지니어  
-> **공개 연락처**: hantae.ju.it@gmail.com (과제 제출 전용 이메일)  
+> **공개 연락처**: gksxogksxo1001@gmail.com (과제 제출 전용 이메일)  
 > **포트폴리오 저장소**: [https://github.com/gksxogksxo1001-sketch/project12](https://github.com/gksxogksxo1001-sketch/project12)  
 > **웹 포트폴리오**: [https://gksxogksxo1001-sketch.github.io/project12/](https://gksxogksxo1001-sketch.github.io/project12/)  
 > **기준 준수**: 과제 안내 4/5 (BRA-C07, BRA-C08) 규격 전수 충족
@@ -13,7 +13,7 @@
 ## 1. 인적사항 및 한 줄 소개
 - **성명**: 주한태 (Ju Han-tae)
 - **생년월일**: 2002년생
-- **공개 연락 수단 (이메일 하나)**: hantae.ju.it@gmail.com
+- **공개 연락 수단 (이메일 하나)**: gksxogksxo1001@gmail.com
 - **한 줄 소개 (BRA-C03)**:  
   **“2026년 10월 14일 이틀 연속 지각 앞에서 자책 대신 열 개의 알람을 맞춰 30분 먼저 강의실의 불을 켜는 사람”**
   - *선정 사유*: 날짜가 있는 실제 위기 사건(10월 14일)과 구체적인 물리적 환경 통제(알람 10개), 그리고 30분 조기 도착이라는 태도의 반전을 가장 명확히 드러내기 때문.

@@ -3,7 +3,7 @@
 > **결과물 HTTPS URL**: [https://gksxogksxo1001-sketch.github.io/project12/](https://gksxogksxo1001-sketch.github.io/project12/) (BRA-C20)  
 > **저장소**: [https://github.com/gksxogksxo1001-sketch/project12](https://github.com/gksxogksxo1001-sketch/project12)  
 > **작성자**: 주한태 (Ju Han-tae) · IT 인프라 & 시스템 엔지니어  
-> **공개 연락처**: hantae.ju.it@gmail.com (단 하나의 이메일 공개, 실명 0건, 비밀값 0건 준수)  
+> **공개 연락처**: gksxogksxo1001@gmail.com (단 하나의 이메일 공개, 실명 0건, 비밀값 0건 준수)  
 > **통과 기준 충족**: BRA-C01 ~ BRA-C21 전 항목 100% 충족
 
 ---

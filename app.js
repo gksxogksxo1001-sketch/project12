@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modalContent.innerHTML = `
       <div class="resume-rendered">
         <h2>주한태 (Ju Han-tae) — 이력서 & 경력기술서</h2>
-        <p><strong>지원 분야:</strong> IT 인프라 & 시스템/보안 엔지니어 | <strong>연락처:</strong> hantae.ju.it@gmail.com</p>
+        <p><strong>지원 분야:</strong> IT 인프라 & 시스템/보안 엔지니어 | <strong>연락처:</strong> gksxogksxo1001@gmail.com</p>
         <p><strong>한 줄 소개:</strong> 2026년 10월 14일 이틀 연속 지각 앞에서 자책 대신 열 개의 알람을 맞춰 30분 먼저 강의실의 불을 켜는 사람</p>
         <hr style="margin: 16px 0; border: none; border-top: 1px solid var(--border-color);">
         

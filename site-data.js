@@ -20,7 +20,7 @@ window.SITE_DATA = {
       "40일간 100%의 아침 리추얼과 열 번의 알람으로 실패를 루틴의 회복으로 반전시키는 사람"
     ],
     "selectedReason": "날짜가 있는 실제 위기(10월 14일)와 구체적 시스템 해결책(알람 10개), 그리고 30분 조기 도착이라는 반전의 실행력을 가장 선명하게 드러내기 때문",
-    "contactEmail": "hantae.ju.it@gmail.com",
+    "contactEmail": "gksxogksxo1001@gmail.com",
     "githubUrl": "https://github.com/gksxogksxo1001-sketch/project12"
   },
   "sourcesData": {
