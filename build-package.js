@@ -1,6 +1,6 @@
 /**
  * build-package.js
- * 제출물 3: 장치(실행 소스-README-마지막 결과)와 문서를 담은 ZIP 생성
+ * 제출물: 장치(실행 소스-README-마지막 결과)와 문서를 담은 ZIP 생성 (BRA-C21)
  */
 
 const fs = require('fs');
@@ -15,7 +15,7 @@ if (fs.existsSync(targetZip)) {
 }
 
 console.log('📦 Creating submission zip package via PowerShell...');
-const psCommand = `Compress-Archive -Path 'generator', 'doc', 'ritual-history-2026-10-22.txt', 'site-data.json', 'site-data.js', 'README.md', 'package.json' -DestinationPath '${ZIP_NAME}' -Force`;
+const psCommand = `Compress-Archive -Path 'generator', 'inputs', 'doc', 'site-data.json', 'site-data.js', 'README.md', 'package.json' -DestinationPath '${ZIP_NAME}' -Force`;
 
 try {
   execSync(`powershell -Command "${psCommand}"`, { stdio: 'inherit' });

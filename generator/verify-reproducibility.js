@@ -1,7 +1,7 @@
 /**
  * generator/verify-reproducibility.js
  * 과제 완주 체크리스트 검증:
- * "장치를 두 번 돌려 같은 결과가 나오는 것을 새 폴더에서 확인했습니다."
+ * "장치를 두 번 돌려 같은 결과가 나오는 것을 새 폴더에서 확인했습니다." (BRA-C09)
  */
 
 const fs = require('fs');
@@ -18,17 +18,23 @@ const BASE_DIR = path.resolve(__dirname, '..');
 const TEST_DIR_1 = path.join(BASE_DIR, 'scratch_test_run1');
 const TEST_DIR_2 = path.join(BASE_DIR, 'scratch_test_run2');
 const ENGINE_SRC = path.join(BASE_DIR, 'generator', 'engine.js');
-const RITUAL_SRC = path.join(BASE_DIR, 'ritual-history-2026-10-22.txt');
+const INPUT_SRC = path.join(BASE_DIR, 'inputs');
 
 function prepareAndRun(targetDir) {
   if (fs.existsSync(targetDir)) {
     fs.rmSync(targetDir, { recursive: true, force: true });
   }
   fs.mkdirSync(path.join(targetDir, 'generator'), { recursive: true });
+  fs.mkdirSync(path.join(targetDir, 'inputs'), { recursive: true });
   fs.mkdirSync(path.join(targetDir, 'doc'), { recursive: true });
 
   fs.copyFileSync(ENGINE_SRC, path.join(targetDir, 'generator', 'engine.js'));
-  fs.copyFileSync(RITUAL_SRC, path.join(targetDir, 'ritual-history-2026-10-22.txt'));
+
+  // inputs 폴더 복사
+  const inputFiles = fs.readdirSync(INPUT_SRC);
+  inputFiles.forEach(f => {
+    fs.copyFileSync(path.join(INPUT_SRC, f), path.join(targetDir, 'inputs', f));
+  });
 
   execSync('node generator/engine.js', { cwd: targetDir, stdio: 'pipe' });
 }
@@ -74,7 +80,7 @@ fs.rmSync(TEST_DIR_2, { recursive: true, force: true });
 
 console.log('\n----------------------------------------------------------------');
 if (allMatched) {
-  console.log('🎉 [검증 성공] 완주 체크리스트 조건 충족!');
+  console.log('🎉 [검증 성공] 완주 체크리스트 조건 충족 (BRA-C09 Pass)!');
   console.log('   새 폴더에서 장치를 두 번 돌려 정확히 동일한 결과가 산출됨을 확인했습니다.');
 } else {
   console.error('❌ [검증 실패] 두 번의 실행 결과가 일치하지 않습니다.');

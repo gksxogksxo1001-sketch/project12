@@ -1,0 +1,14 @@
+{
+  "sourceName": "내 출석 기록",
+  "totalTrainingDays": 50,
+  "attendedDays": 48,
+  "attendanceRate": "96.0%",
+  "lateCount": 2,
+  "absentCount": 0,
+  "lateDates": [
+    "2026-10-13",
+    "2026-10-14"
+  ],
+  "recoveryAction": "10월 15일 알람 10개 설정 및 10월 16일 30분 조기 도착으로 영구 정상화",
+  "updatedAt": "2026-10-22"
+}
