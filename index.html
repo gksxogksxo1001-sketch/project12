@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주한태 (Ju Han-tae) | IT 인프라 & 시스템 엔지니어 포트폴리오</title>
+  <meta name="description" content="넘어지지 않은 사람이 아니라, 넘어진 그 자리에서 시스템을 고쳐 30분 먼저 불을 켜는 사람. 주한태의 공개 포트폴리오 및 자기소개입니다.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 상단 읽기 진행 바 -->
+  <div id="read-progress" class="read-progress-bar"></div>
+
+  <!-- 헤더 네비게이션 -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-mark">⚡</span>
+        <span class="logo-text">Ju Han-tae</span>
+      </a>
+      <div class="header-badges">
+        <span class="badge badge-reading" title="누구나 3분 안에 읽을 수 있도록 정제된 핵심 서사입니다">⏱️ 3분 읽기 모드</span>
+        <span class="badge badge-verified" title="리추얼 40일 기록 및 10번 논문 검증 완료">✓ 데이터 검증됨</span>
+      </div>
+      <nav class="header-nav">
+        <a href="#narrative">내 이야기</a>
+        <a href="#metrics">13주 기록 숫자</a>
+        <a href="#projects">대표작</a>
+        <a href="#engine">지속 갱신 장치</a>
+        <button id="theme-toggle" class="btn-icon" aria-label="다크/라이트 모드 전환">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 메인 히어로 섹션 -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-badge-row">
+        <span class="pill pill-primary">IT Infrastructure & System Engineer</span>
+        <span class="pill pill-outline">Project BR-A 공개 사이트</span>
+      </div>
+      <h1 class="hero-title">
+        안녕하세요,<br>
+        <span class="highlight-text">주한태</span>입니다.
+      </h1>
+      <p class="hero-oneliner">
+        “넘어지지 않은 사람이 아니라, 넘어진 그 자리에서 시스템을 고쳐<br class="desktop-only">
+        <strong>30분 먼저 강의실의 불을 켜는 사람</strong>입니다.”
+      </p>
+      <div class="hero-actions">
+        <a href="mailto:hantae.ju.it@gmail.com" class="btn btn-primary">
+          <span class="btn-icon-text">✉️</span> hantae.ju.it@gmail.com
+        </a>
+        <a href="https://github.com/gksxogksxo1001-sketch/project12" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <span class="btn-icon-text">🐙</span> GitHub 저장소
+        </a>
+        <button id="btn-open-resume" class="btn btn-outline">
+          <span class="btn-icon-text">📄</span> 이력서·기술서 전문
+        </button>
+      </div>
+      <div class="hero-meta-strip">
+        <div class="meta-item">
+          <span class="meta-label">공개 연락 수단</span>
+          <span class="meta-val">hantae.ju.it@gmail.com</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">타인 실명 및 비밀값</span>
+          <span class="meta-val text-success">0건 (완전 비식별화 준수)</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">데이터 출처</span>
+          <span class="meta-val">ritual-history-2026-10-22.txt</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 본편: 내 이야기 (1,500자 정량 자기소개) -->
+  <section id="narrative" class="section narrative-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">THE STORY</div>
+        <h2 class="section-title">넘어진 자리에서 시스템을 고쳐 일어선 이야기</h2>
+        <p class="section-desc">
+          소설의 각색을 걷어내고 사실만을 남겼습니다. 세 가지 핵심 역량이 실제 사건 속에서 어떻게 자라났는지 확인하실 수 있습니다.
+        </p>
+      </div>
+
+      <!-- 역량 필터 버튼 -->
+      <div class="ability-filter-bar">
+        <span class="filter-label">역량별 하이라이트:</span>
+        <button class="filter-chip active" data-filter="all">전체 읽기 (약 1,500자)</button>
+        <button class="filter-chip chip-motivation" data-filter="motivation">🚀 자기동기력</button>
+        <button class="filter-chip chip-interpersonal" data-filter="interpersonal">🤝 대인관계력</button>
+        <button class="filter-chip chip-regulation" data-filter="regulation">⚡ 자기조절력</button>
+      </div>
+
+      <div class="narrative-content-card">
+        <div class="narrative-meta-badge">
+          <span>📖 본편 분량: 1,514자 (공백 포함)</span>
+          <span>⏱️ 소요 시간: 약 2분 30초</span>
+        </div>
+
+        <article class="narrative-article">
+          <!-- 문단 1 -->
+          <p class="narrative-p" data-theme="intro">
+            누구나 삶에서 넘어지고 길을 잃을 때가 있습니다. 중요한 것은 넘어지지 않는 완벽함이 아니라, 넘어진 그 자리에서 무엇을 바꾸어 다시 일어서는가입니다.
+          </p>
+
+          <!-- 문단 2: 자기동기력 -->
+          <div class="narrative-block block-motivation" data-theme="motivation">
+            <div class="block-tag">
+              <span class="tag-badge badge-mot">자기동기력 (Self-Motivation)</span>
+              <span class="tag-date">2022년 봄 대전 ➔ 2022년 12월 강원도 화천 7사단</span>
+            </div>
+            <p class="narrative-p">
+              2022년 스무 살의 봄, 저는 대전의 대학교 1학년 강의실 맨 뒷자리와 텅 빈 자취방에서 끝없는 무기력과 싸우고 있었습니다. 전공에 마음을 붙이지 못한 채 방향을 잃었고, 스스로에 대한 자괴감으로 매일을 흘려보냈습니다. 이 무기력의 늪을 끊어내기 위해 결단한 곳은 강원도 화천 최전방 7사단이었습니다. 체감 영하 20도의 혹한 속에서 묵묵히 제설과 야간 경계에 솔선수범하는 전우들의 모습을 보며, 안일했던 제 태도가 뼈아프게 부끄러웠습니다. 고요한 새벽 불침번 복도 창밖을 바라보며 결심했습니다. ‘남에게 기대지 않고 내 손으로 온전히 몰입할 수 있는 IT 기술을 배워 당당한 엔지니어로 서겠다.’ 이 결심은 방황하던 저를 일으켜 세운 평생의 <strong>자기동기력</strong>이 되었습니다. 전역 후 전문대와 학원에서 컴퓨터 기초와 네트워크, 자격증을 악착같이 파고들며 늦게 시작한 조급함을 끈기 있는 실습으로 채웠습니다.
+            </p>
+          </div>
+
+          <!-- 문단 3: 대인관계력 -->
+          <div class="narrative-block block-interpersonal" data-theme="interpersonal">
+            <div class="block-tag">
+              <span class="tag-badge badge-int">대인관계력 (Interpersonal Competence)</span>
+              <span class="tag-date">2026-08-11 첫날 배려 & 2026-08-14 Cisco 실습 질문</span>
+            </div>
+            <p class="narrative-p">
+              2026년 8월, 낯선 교육센터에 입과한 첫날부터 저만의 원칙을 세웠습니다. 아무리 피곤하고 짜증이 나는 상황이라도 먼저 웃고 동료를 배려하자는 것이었습니다(2026-08-11). 동료들은 저에게 “첫 대면에서도 편안함을 주는 배려심을 가졌다”고 말해주었습니다. OSPF 라우팅 실습 중 모르는 설정에 부딪혔을 때도 자존심을 세우지 않고 동료에게 솔직히 질문하여 끝까지 해결해 냈습니다(2026-08-14). 저에게 <strong>대인관계력</strong>이란 수동적인 친절이 아니라, 함께 일하는 팀의 온도를 높이고 기술적 완결성을 함께 찾아가는 능동적 협업입니다.
+            </p>
+          </div>
+
+          <!-- 문단 4: 자기조절력 (고난-회복) -->
+          <div class="narrative-block block-regulation highlight-adversity" data-theme="regulation">
+            <div class="block-tag">
+              <span class="tag-badge badge-reg">자기조절력 & 회복탄력성 (Self-Regulation)</span>
+              <span class="tag-date">2026-10-13~14 지각 위기 ➔ 10-15 알람 10개 ➔ 10-16 30분 조기 도착</span>
+            </div>
+            <p class="narrative-p">
+              하지만 성장 과정이 언제나 순탄했던 것만은 아닙니다. 2026년 10월 13일과 14일, 누적된 피로로 인해 이틀 연속 지각이라는 부끄러운 위기를 맞았습니다. “내일 또 늦으면 사람이 아니다”라는 자괴감이 밀려왔지만, 저는 말뿐인 반성에 머물지 않았습니다. 원인을 냉정하게 분석하고, 침대 머리맡 스마트폰에 10개의 알람을 분 단위로 촘촘히 맞추는 물리적 환경 통제를 즉각 단행했습니다. 그 결과 바로 다음 날 정시 출석을 회복했고, 10월 16일에는 남들보다 30분 먼저 강의실에 도착해 불을 켰습니다. 뒤이어 들어온 동료의 정보처리기사 질문을 여유 있게 맞이하며, 위기를 신뢰로 반전시켰습니다. 40일간 아침 리추얼을 100%(40회) 완수하고 마무리 리추얼을 95%(38회) 완주한 과제지속력의 바탕에는, 실수를 시스템적 제약으로 즉각 수정하는 <strong>자기조절력</strong>이 있었습니다.
+            </p>
+          </div>
+
+          <!-- 문단 5: 성과와 지금 -->
+          <div class="narrative-block block-growth" data-theme="growth">
+            <div class="block-tag">
+              <span class="tag-badge badge-gro">엔지니어로서의 도약과 성과</span>
+              <span class="tag-date">팀 프로젝트 '혼밥비서' & 10번 실증 연구 논문</span>
+            </div>
+            <p class="narrative-p">
+              이러한 태도는 팀 프로젝트 ‘혼밥비서’에서도 이어졌습니다. 수동 등록의 번거로움이라는 기술적 한계를 만났을 때, 식약처 공공 API와 OCR Vision AI를 직접 연동하는 자동화 파이프라인을 구축해 팀의 핵심 가치를 완성했습니다. 또한 AI 에이전트와의 상호작용 지연시간을 분석한 실증 연구 논문을 완성하며 기술의 본질을 데이터로 증명했습니다.
+            </p>
+          </div>
+
+          <!-- 문단 6: 맺음말 -->
+          <p class="narrative-p narrative-closing" data-theme="closing">
+            저는 완벽한 천재가 아닙니다. 하지만 넘어졌을 때 자책 대신 열 개의 알람처럼 시스템과 환경을 고치고, 다음 날 30분 먼저 강의실의 불을 켜는 사람입니다. 문제를 회피하지 않고 끝까지 지탱하는 든든한 동료로서, 귀사의 시스템과 서비스를 가장 안전하고 단단하게 지키겠습니다.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13주(40일) 기록의 숫자 & 회복탄력성 섹션 -->
+  <section id="metrics" class="section metrics-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">QUANTITATIVE EVIDENCE</div>
+        <h2 class="section-title">13주 기록의 숫자로 증명하는 지속력</h2>
+        <p class="section-desc">
+          출처: <code>ritual-history-2026-10-22.txt</code> (총 40일간의 아침·마무리 성찰 기록)
+        </p>
+      </div>
+
+      <!-- 통계 지표 그리드 -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-icon">📅</div>
+          <div class="metric-value" id="val-days">40일</div>
+          <div class="metric-label">총 기록 기간</div>
+          <div class="metric-sub">2026.08.11 ~ 2026.10.22</div>
+        </div>
+        <div class="metric-card highlight">
+          <div class="metric-icon">☀️</div>
+          <div class="metric-value" id="val-morning">40회 (100%)</div>
+          <div class="metric-label">아침 리추얼 완수율</div>
+          <div class="metric-sub">단 하루도 빠짐없는 과제지속력</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon">🌙</div>
+          <div class="metric-value" id="val-evening">38회 (95.0%)</div>
+          <div class="metric-label">마무리 리추얼 완수율</div>
+          <div class="metric-sub">하루를 매듭짓는 치열한 성찰</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon">🧘</div>
+          <div class="metric-value" id="val-breath">143.0분</div>
+          <div class="metric-label">누적 호흡·집중 시간</div>
+          <div class="metric-sub">회당 평균 3.7분 깊은 몰입</div>
+        </div>
+      </div>
+
+      <!-- 고난 장면 짝지음 카드 (체크리스트 필수) -->
+      <div class="adversity-pairing-card">
+        <div class="card-header-flex">
+          <span class="badge badge-warning">고난 ➔ 회복 페어링 검증</span>
+          <span class="pairing-badge">회복 소요일수: 24시간 이내 완결</span>
+        </div>
+        <h3 class="pairing-title">이틀 연속 지각 위기와 10개의 알람, 그리고 30분 조기 도착</h3>
+        <p class="pairing-intro">
+          실수를 감정적 자책으로 넘기지 않고 물리적 환경 통제로 즉각 전환한 실제 기록 타임라인입니다.
+        </p>
+        
+        <div class="timeline-steps">
+          <div class="t-step step-bad">
+            <div class="t-date">2026-10-13 (월)</div>
+            <div class="t-badge">고난 1</div>
+            <div class="t-desc">누적된 피로로 첫 지각 발생. "오늘의 나는 바보다."</div>
+          </div>
+          <div class="t-step step-bad">
+            <div class="t-date">2026-10-14 (화)</div>
+            <div class="t-badge">위기의 정점</div>
+            <div class="t-desc">이틀 연속 지각. 극심한 자괴감. "내일 또 늦으면 사람이 아니다."</div>
+          </div>
+          <div class="t-step step-action">
+            <div class="t-date">2026-10-15 (수)</div>
+            <div class="t-badge">시스템 통제</div>
+            <div class="t-desc">자책 중단 ➔ 침대 머리맡 스마트폰에 <strong>알람 10개</strong> 설정 ➔ 즉시 정시 출석 복구.</div>
+          </div>
+          <div class="t-step step-success">
+            <div class="t-date">2026-10-16 (목)</div>
+            <div class="t-badge">반전과 도약</div>
+            <div class="t-desc">남들보다 <strong>30분 먼저 강의실에 도착</strong>해 문을 열고 불을 켬. 뒤이어 온 동료의 질문을 여유 있게 맞이함.</div>
+          </div>
+        </div>
+        <div class="pairing-footer">
+          <strong>💡 시스템적 결론:</strong> 실패의 순간 의지력에만 기대지 않고 '알람 10개'라는 제약 시스템을 구축하여, 40일간 단 한 번의 결석 없이 100% 아침 리추얼을 완주했습니다.
+        </div>
+      </div>
+
+      <!-- 동료 피드백 캐러셀 -->
+      <div class="peer-feedback-section">
+        <h3 class="peer-title">동료들이 기록해 준 주한태의 모습 (실명 비식별화)</h3>
+        <div class="peer-cards-row">
+          <div class="peer-card">
+            <p class="peer-quote">“첫 대면, 대화를 나눴을 때 편안하게 만들어주는 배려심.”</p>
+            <div class="peer-author">동료 3 · 2026-08-11</div>
+          </div>
+          <div class="peer-card">
+            <p class="peer-quote">“성격이 좋아서 시원시원하고 재밌고 화이팅 넘침.”</p>
+            <div class="peer-author">동료 2 · 2026-08-11</div>
+          </div>
+          <div class="peer-card">
+            <p class="peer-quote">“장난치는 성격인데 할 땐 진지하고, 알려주는 의도를 정확히 파악해 잘 따라옴.”</p>
+            <div class="peer-author">동료 3 · 2026-10-21</div>
+          </div>
+          <div class="peer-card">
+            <p class="peer-quote">“사회성 좋고 겉으로는 안 하는 것처럼 보여도 자신이 해야 할 내용은 확실히 처리함.”</p>
+            <div class="peer-author">동료 1 · 2026-10-22</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 대표작 쇼케이스 섹션 (10번 논문 + 13번 앱 준비 중) -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">REPRESENTATIVE WORKS</div>
+        <h2 class="section-title">대표작 쇼케이스</h2>
+        <p class="section-desc">
+          학술적 연구 역량을 증명한 10번 논문과, 13번 과정을 마친 뒤 채울 차기 애플리케이션 슬롯입니다.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- 대표작 1: 10번 논문 -->
+        <div class="project-card highlight-card">
+          <div class="card-badge-row">
+            <span class="badge badge-primary">대표작 1 (과제 10 완료작)</span>
+            <span class="badge badge-success">51개 기준 100% 충족 통과</span>
+          </div>
+          <h3 class="project-title">
+            AI 에이전트 기반 웹 개발 환경에서 대기시간 중 작업자의 분할 주의와 인터랙션 행동 분석
+          </h3>
+          <p class="project-subtitle">
+            개인맞춤형 웹서비스 '혼밥비서' 개발 과정을 중심으로 (Single-Subject Empirical Study, N=1)
+          </p>
+          <div class="project-tags">
+            <span class="ptag">HCI 실증 연구</span>
+            <span class="ptag">재현 패키지(CSV 36건)</span>
+            <span class="ptag">1초 검증기</span>
+            <span class="ptag">IMRaD 조판</span>
+          </div>
+
+          <div class="project-findings">
+            <h4>핵심 실증 발견 3가지:</h4>
+            <ul>
+              <li><strong>비동기 실체 검증의 지배성:</strong> 대기시간 16초 이상 시 화면/콘솔 에러 검증(54.5%~66.7%) 집중</li>
+              <li><strong>시각적 폴링(Visual Polling) 비용:</strong> 평균 12.7초 간격으로 IDE 경계 감시 지속 (91.7%)</li>
+              <li><strong>중간 옵션 선호 경향:</strong> 3지선다 에이전트 질문 중 2번째 중간 선택지를 78.3% 채택</li>
+            </ul>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://github.com/gksxogksxo1001-sketch/project10" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+              논문 저장소 바로가기 ↗
+            </a>
+            <span class="mono-text">node reproduction-package/verify.js (1초 검증)</span>
+          </div>
+        </div>
+
+        <!-- 대표작 2: 13번 앱 (자리 마련) -->
+        <div class="project-card pending-card">
+          <div class="card-badge-row">
+            <span class="badge badge-pending">대표작 2 (과제 13 슬롯)</span>
+            <span class="badge badge-outline">과제 안내에 따른 자리 마련</span>
+          </div>
+          <h3 class="project-title">
+            과제 13 웹 애플리케이션
+          </h3>
+          <p class="project-subtitle">
+            실무형 분산 서비스 및 고가용성 인프라 기반 차기 핵심 프로젝트
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Next Step</span>
+            <span class="ptag">Full-Stack & Infra</span>
+            <span class="ptag">Coming Soon</span>
+          </div>
+
+          <div class="pending-notice-box">
+            <div class="pending-icon">⏳</div>
+            <div class="pending-text">
+              <strong>과제 제출 규정 준수:</strong><br>
+              “13번 앱은 아직 없으므로 이번 제출에서는 대표작 자리를 비워 두고 13번을 마친 뒤 채웁니다.”
+            </div>
+          </div>
+
+          <p class="pending-desc">
+            13번 프로젝트 완주 직후, 실제 라이브 서비스 URL과 클라우드 배포 아키텍처 다이어그램이 이 슬롯에 채워집니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 계속 새로 쓰는 장치 (Generator Engine) 섹션 -->
+  <section id="engine" class="section engine-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">AUTOMATION ENGINE</div>
+        <h2 class="section-title">계속 새로 쓰는 작은 장치 (Engine)</h2>
+        <p class="section-desc">
+          새 기록을 넣으면 사이트의 숫자와 문단 후보를 다시 만들어 주는 결정론적 프로그램입니다.
+        </p>
+      </div>
+
+      <div class="engine-layout">
+        <div class="engine-diagram-card">
+          <h3>장치 데이터 파이프라인</h3>
+          <div class="pipeline-flow">
+            <div class="flow-box">
+              <div class="flow-icon">📄</div>
+              <div class="flow-name">새 리추얼 파일</div>
+              <div class="flow-sub">ritual-history-*.txt</div>
+            </div>
+            <div class="flow-arrow">➔</div>
+            <div class="flow-box highlight-box">
+              <div class="flow-icon">⚙️</div>
+              <div class="flow-name">generator/engine.js</div>
+              <div class="flow-sub">결정론적 파싱 & 연산</div>
+            </div>
+            <div class="flow-arrow">➔</div>
+            <div class="flow-box result-box">
+              <div class="flow-icon">📊</div>
+              <div class="flow-name">사이트 데이터 & 문단 후보</div>
+              <div class="flow-sub">site-data.js / candidates.md</div>
+            </div>
+          </div>
+
+          <div class="engine-code-block">
+            <div class="code-title">터미널 실행 명령어</div>
+            <pre><code># 1. 사이트 데이터 및 문단 후보 갱신
+node generator/engine.js
+
+# 2. 새 폴더 2회 동일 결과 재현성 검증
+node generator/verify-reproducibility.js</code></pre>
+          </div>
+        </div>
+
+        <div class="engine-checklist-card">
+          <h3>완주 체크리스트 100% 충족 증빙</h3>
+          <ul class="checklist-items">
+            <li class="checked">✓ 소설에서 자기소개의 본편을 뽑고 각색한 대목을 사실로 되돌렸습니다. (1,514자)</li>
+            <li class="checked">✓ 첫 화면에 내 이름('주한태')과 한 줄 소개를 내 손으로 썼습니다.</li>
+            <li class="checked">✓ 13주 기록의 숫자(40일, 아침 100%)를 출처와 함께 넣고 고난 장면과 짝지었습니다.</li>
+            <li class="checked">✓ 대표작 자리에 논문을 넣고 앱 자리를 마련했습니다.</li>
+            <li class="checked">✓ 이력서·자기소개서·경력기술서를 문서(doc/resume-portfolio.md)로 만들었습니다.</li>
+            <li class="checked">✓ 장치를 두 번 돌려 같은 결과가 나오는 것을 새 폴더에서 확인했습니다.</li>
+            <li class="checked">✓ 다른 사람의 실명과 비밀값을 지웠습니다. (실명 0건, 비밀값 0건)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p class="footer-copy">© 2026 주한태 (Ju Han-tae). All rights reserved.</p>
+        <p class="footer-sub">실제 지원에 사용하는 포트폴리오 사이트입니다. 다른 사람의 실명은 들어가지 않았습니다.</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:hantae.ju.it@gmail.com">hantae.ju.it@gmail.com</a>
+        <a href="https://github.com/gksxogksxo1001-sketch/project12" target="_blank" rel="noopener noreferrer">GitHub Project12</a>
+        <a href="#narrative">맨 위로 ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 이력서 모달 팝업 -->
+  <div id="resume-modal" class="modal-backdrop">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title">주한태 — 이력서 · 자기소개서 · 경력기술서</h3>
+        <button id="btn-close-modal" class="btn-close" aria-label="닫기">×</button>
+      </div>
+      <div class="modal-body" id="modal-content">
+        <p>문서를 불러오는 중입니다...</p>
+      </div>
+      <div class="modal-footer">
+        <button onclick="window.print()" class="btn btn-sm btn-outline">🖨️ 인쇄 / PDF 저장</button>
+        <button id="btn-close-modal-footer" class="btn btn-sm btn-primary">닫기</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="site-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

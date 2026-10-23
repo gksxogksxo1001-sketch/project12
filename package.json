@@ -1,0 +1,14 @@
+{
+  "name": "project12-portfolio-engine",
+  "version": "1.0.0",
+  "description": "주한태 포트폴리오 웹사이트 및 계속 새로 쓰는 장치 (BR-A)",
+  "main": "generator/engine.js",
+  "scripts": {
+    "start": "node generator/engine.js",
+    "generate": "node generator/engine.js",
+    "verify": "node generator/verify-reproducibility.js",
+    "pack": "node build-package.js"
+  },
+  "author": "Ju Han-tae",
+  "license": "MIT"
+}

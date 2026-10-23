@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "generatedAt": "2026-10-22",
+    "sourceFile": "ritual-history-2026-10-22.txt",
+    "version": "1.2.0"
+  },
+  "hero": {
+    "name": "주한태",
+    "nameEn": "Ju Han-tae",
+    "title": "IT 인프라 & 시스템 엔지니어",
+    "oneLiner": "넘어지지 않은 사람이 아니라, 넘어진 그 자리에서 시스템을 고쳐 30분 먼저 불을 켜는 사람",
+    "contactEmail": "hantae.ju.it@gmail.com",
+    "githubUrl": "https://github.com/gksxogksxo1001-sketch/project12"
+  },
+  "metrics": {
+    "totalDays": 40,
+    "startDate": "2026-08-11",
+    "endDate": "2026-10-22",
+    "morningCount": 40,
+    "morningRate": "100.0%",
+    "eveningCount": 38,
+    "eveningRate": "95.0%",
+    "totalBreathingMinutes": 143,
+    "avgBreathMinutes": 3.58,
+    "totalSessions": 78,
+    "adversityPairing": {
+      "incidentTitle": "이틀 연속 지각 위기와 물리적 환경 통제 (알람 10개 & 30분 조기 도착)",
+      "timeline": [
+        {
+          "date": "2026-10-13",
+          "event": "첫 지각 발생 - \"오늘의 나는 바보다\" (자책과 경각심)"
+        },
+        {
+          "date": "2026-10-14",
+          "event": "이틀 연속 지각 - \"내일도 늦으면 내가 개다\" (위기의 임계점)"
+        },
+        {
+          "date": "2026-10-15",
+          "event": "자책 대신 침대 머리맡 알람 10개 설정 ➔ 즉시 정시 도착 복구 성공"
+        },
+        {
+          "date": "2026-10-16",
+          "event": "남들보다 30분 먼저 강의실 문을 열고 조기 도착 ➔ 동료의 질문을 여유 있게 서포트"
+        }
+      ],
+      "recoveryHours": 24,
+      "outcomeSummary": "단순 반성에 머무르지 않고 시스템적 제약(알람 10개)을 구축하여 루틴을 영구 정상화하고 조기 도착으로 반전시킴."
+    },
+    "keywordDistribution": {
+      "배려·친절": 16,
+      "침착·인내": 5,
+      "성실·열정": 51,
+      "기상·시간엄수": 38,
+      "질문·해결": 21
+    }
+  },
+  "peerFeedbacks": [
+    {
+      "peer": "동료 3",
+      "feedback": "첫 대면, 대화를 나눴을 때 편안하게 만들어주는 배려심",
+      "date": "2026-08-11"
+    },
+    {
+      "peer": "동료 2",
+      "feedback": "성격이 좋아서 시원시원하고 재밌고 화이팅 넘침",
+      "date": "2026-08-11"
+    },
+    {
+      "peer": "동료 1",
+      "feedback": "친화력이 좋고 밝고 유쾌한 성격의 긍정적 에너지 전파",
+      "date": "2026-08-12"
+    },
+    {
+      "peer": "동료 3",
+      "feedback": "장난치는 성격인데 할 땐 진지하고, 알려주는 의도를 정확히 파악해 잘 따라옴",
+      "date": "2026-10-21"
+    },
+    {
+      "peer": "동료 1",
+      "feedback": "사회성 좋고 겉으로는 안 하는 것처럼 보여도 자신이 해야 할 내용은 확실히 처리함",
+      "date": "2026-10-22"
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-10",
+      "title": "과제 10 실증 연구 논문",
+      "subtitle": "AI 에이전트 기반 웹 개발 환경에서 대기시간 중 작업자의 분할 주의와 인터랙션 행동 분석",
+      "scope": "개인맞춤형 웹서비스 '혼밥비서' 개발 과정을 중심으로 (Single-Subject Empirical Study, N=1)",
+      "tags": [
+        "HCI 실증 연구",
+        "AI 에이전트 인터랙션",
+        "재현 패키지(CSV 36건)",
+        "1초 검증기"
+      ],
+      "status": "완료 및 검증 통과 (51개 기준 100% 충족)",
+      "keyFindings": [
+        "비동기적 실체 검증 행동의 지배성: 대기시간 16초 이상 시 화면/콘솔 에러 검증(54.5%~66.7%) 집중",
+        "시각적 폴링(Visual Polling) 비용: 평균 12.7초 간격으로 경계 감시 상태 지속 (발생률 91.7%)",
+        "3지 선다 모달에서 2번째 중간 옵션 선호 경향: 78.3%로 중간 선택지를 의도적 채택"
+      ],
+      "badge": "대표작 1"
+    },
+    {
+      "id": "project-13",
+      "title": "과제 13 웹 애플리케이션",
+      "subtitle": "실무형 분산 서비스 및 고가용성 인프라 기반 차기 핵심 프로젝트",
+      "scope": "13번 과정을 거쳐 실제 배포 및 서비스 연동 예정인 대표 애플리케이션",
+      "tags": [
+        "Next Step",
+        "Full-stack & Infra",
+        "Coming Soon"
+      ],
+      "status": "13번 마친 뒤 채움 (준비 중 슬롯)",
+      "keyFindings": [
+        "과제 안내 규정에 따라 현재 대표작 자리를 비워 두고, 13번 프로젝트 완주 직후 상세 아키텍처 및 라이브 데모 채움 예정"
+      ],
+      "badge": "대표작 2 (Coming Soon)"
+    }
+  ]
+}

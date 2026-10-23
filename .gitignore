@@ -1,0 +1,4 @@
+node_modules/
+scratch_*
+.DS_Store
+Thumbs.db
