@@ -269,8 +269,8 @@ function run() {
         tags: ['논문 반영 웹앱(BR-B)', '무폴링 청각 타이머', '3지선다 1줄·위험도 요약', '예외 입력 방어 100%'],
         status: '완료 및 대표작 자리 연결 완료 (BRB-C01 ~ C08 100% 충족)',
         localViewUrl: 'app/index.html',
-        liveUrl: 'https://gksxogksxo1001-sketch.github.io/project13/',
-        githubUrl: 'https://github.com/gksxogksxo1001-sketch/project13',
+        liveUrl: 'https://gksxogksxo1001-sketch.github.io/project12/app/index.html',
+        githubUrl: 'https://github.com/gksxogksxo1001-sketch/project12/tree/main/app',
         keyFindings: [
           '할 일 1 (대기 진단·타이머): 대기 시간(초) 입력 ➔ 구간별(0~15초/16~30초/31초+) F12·375px 검수 체크리스트 & 무폴링 청각 타이머 실행',
           '할 일 2 (3지선다 요약기): 장문의 3지선다 모달을 1줄 핵심 + 위험도 뱃지로 변환해 78.3% 중간 옵션 편향 교정',
