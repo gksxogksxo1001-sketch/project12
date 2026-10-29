@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <ul>
           <li><strong>과제 10 실증 연구 논문:</strong> AI 에이전트 대기시간 중 작업자 분할 주의 분석 (36개 세션 실측 CSV, 1초 검증기 구축)</li>
           <li><strong>팀 프로젝트 '혼밥비서':</strong> 영수증 Vision OCR 식재료 자동 등록 파이프라인 개발 및 식약처 Open API 연동</li>
-          <li><strong>과제 13 웹 애플리케이션:</strong> 실무형 분산 서비스 연동 예정 (2026년 11월 13일 예정)</li>
+          <li><strong>과제 13 (BR-B) FocusGuard AI 웹앱:</strong> 10번 논문 결과(16초 임계치, 12.7초 폴링 91.7%, 3지선다 편향 78.3%)를 반영한 분할 주의 방어 &amp; 3지선다 1줄 요약 애플리케이션 (<a href="app/index.html" target="_blank">바로 실행 ↗</a>)</li>
         </ul>
 
         <div style="margin-top: 24px; padding: 12px; background: var(--bg-secondary); border-radius: 8px; font-size: 0.85rem;">

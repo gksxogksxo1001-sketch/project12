@@ -82,7 +82,7 @@
           <div class="portal-info">
             <span class="portal-label">입구 3</span>
             <strong class="portal-title">대표작</strong>
-            <span class="portal-desc">10번 실증 논문 & 13번 앱 예정 자리</span>
+            <span class="portal-desc">10번 실증 논문 & 13번 논문 반영 앱 (FocusGuard AI)</span>
           </div>
           <span class="portal-arrow">→</span>
         </a>
@@ -361,7 +361,7 @@
         <div class="section-eyebrow">REPRESENTATIVE WORKS</div>
         <h2 class="section-title">대표작 쇼케이스</h2>
         <p class="section-desc">
-          학술적 연구 역량을 증명한 10번 논문과, 13번 과정을 마친 뒤 채울 차기 애플리케이션 자리입니다.
+          학술적 연구 역량을 증명한 10번 논문과, 그 논문의 실측 결과를 실제 도구로 구현한 13번 애플리케이션(과제 BR-B)입니다.
         </p>
       </div>
 
@@ -406,36 +406,47 @@
           </div>
         </div>
 
-        <!-- 대표작 2: 13번 앱 (BRA-C06: 13번 앱이 들어갈 자리 마련 및 13번 예정일 명시) -->
-        <div class="project-card pending-card">
+        <!-- 대표작 2: 13번 앱 (과제 BR-B 완료 연결: 10번 논문 결과를 실제로 쓰는 애플리케이션) -->
+        <div class="project-card highlight-card">
           <div class="card-badge-row">
-            <span class="badge badge-pending">대표작 2 (과제 13 슬롯)</span>
-            <span class="badge badge-outline">과제 안내에 따른 자리 마련</span>
+            <span class="badge badge-primary">대표작 2 (과제 BR-B · 13번 완료작)</span>
+            <span class="badge badge-success">10번 논문 실측 결과 100% 반영</span>
           </div>
           <h3 class="project-title">
-            과제 13 웹 애플리케이션
+            FocusGuard AI — AI 에이전트 대기시간 분할 주의 방어 &amp; 3지선다 요약 워크벤치
           </h3>
           <p class="project-subtitle">
-            실무형 분산 서비스 및 고가용성 인프라 기반 차기 핵심 프로젝트
+            10번 논문의 실측 결과(16초 임계치, 12.7초 시각적 폴링 91.7%, 3지선다 중간 옵션 편향 78.3%)를 실제로 쓰는 웹 애플리케이션
           </p>
           <div class="project-tags">
-            <span class="ptag">Next Step</span>
-            <span class="ptag">Full-Stack & Infra</span>
-            <span class="ptag">배포 대기</span>
+            <span class="ptag">논문 반영 웹앱 (BR-B)</span>
+            <span class="ptag">무폴링 청각 타이머</span>
+            <span class="ptag">3지선다 1줄·위험도 요약</span>
+            <span class="ptag">예외 입력 방어 100%</span>
           </div>
 
-          <!-- 과제 3/5 안내 준수: 앱 자리에 13번 예정일 명시 -->
-          <div class="pending-notice-box">
-            <div class="pending-icon">⏳</div>
-            <div class="pending-text">
-              <strong>13번 앱 오픈 예정일:</strong> <span class="highlight-date">2026년 11월 13일</span><br>
-              <span class="guidance-quote">“13번 앱은 아직 없으므로 이번 제출에서는 대표작 자리를 비워 두고 13번을 마친 뒤 채웁니다.”</span>
-            </div>
+          <div class="project-findings">
+            <h4>누구를 어떻게 돕는가 &amp; 사용자가 할 일 3가지:</h4>
+            <ul>
+              <li><strong>앱 한 문장:</strong> AI 코딩 에이전트 대기 시간(16초+) 중 12.7초마다 화면을 힐끔거리는 주의 분산과 3지선다 2번째 옵션 편향(78.3%)을 논문 실측 규칙으로 줄여 주는 도구</li>
+              <li><strong>할 일 1 (대기 진단·타이머):</strong> 대기 시간(초) 입력 ➔ 구간별(0~15초/16~30초/31초+) F12·375px 검수 체크리스트 &amp; 무폴링 청각 타이머 실행</li>
+              <li><strong>할 일 2 (3지선다 요약기):</strong> 장문의 3지선다 모달을 ‘1줄 핵심 + 위험도 뱃지’로 변환해 78.3% 중간 옵션 편향 교정</li>
+              <li><strong>할 일 3 (프롬프트·36건 대조):</strong> 10분 디버깅 기반 4줄 구조화 프롬프트 생성 및 논문 36회 원자료와 내 세션 실시간 비교</li>
+            </ul>
           </div>
 
-          <p class="pending-desc">
-            과제 13 완주 직후, 실제 클라우드 분산 배포 라이브 데모 URL과 시스템 아키텍처 다이어그램이 이 자리에 채워집니다.
-          </p>
+          <div class="project-actions">
+            <a href="app/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+              ⚡ 13번 앱 바로 실행하기 (로그인 불필요) ↗
+            </a>
+            <a href="https://gksxogksxo1001-sketch.github.io/project13/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+              단독 배포 URL ↗
+            </a>
+            <a href="https://github.com/gksxogksxo1001-sketch/project13" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+              저장소 ↗
+            </a>
+            <span class="mono-text">node app/verify-app.js (1초 검증)</span>
+          </div>
         </div>
       </div>
     </div>
@@ -537,7 +548,7 @@ node generator/verify-reproducibility.js</code></pre>
             <li class="checked">✓ <strong>BRA-C03:</strong> 첫 화면에 이름('주한태')과 날짜 포함 '...한 사람'으로 끝나는 한 줄 소개 및 4개 입구 완비</li>
             <li class="checked">✓ <strong>BRA-C04:</strong> 이야기 토막마다 날짜가 있는 장면으로 시작 (2022-03, 2022-12, 2026-08-11, 2026-10-13, 2026-10-20)</li>
             <li class="checked">✓ <strong>BRA-C05:</strong> 13주 기록 숫자 3대 출처(출석 기록, 리추얼 기록, 제출 현황) 분리 표기 및 고난 짝지음</li>
-            <li class="checked">✓ <strong>BRA-C06:</strong> 대표작 자리에 10번 논문(로그인 없는 직링크)과 13번 앱 예정 자리(예정일: 2026-11-13) 마련</li>
+            <li class="checked">✓ <strong>BRA-C06 &amp; BRB-C08:</strong> 대표작 자리에 10번 논문(직링크)과 13번 논문 반영 앱(FocusGuard AI, 사이트 내 직링크 및 단독 URL) 연결 완료</li>
             <li class="checked">✓ <strong>결정론적 검증:</strong> 새 폴더 2회 실행 SHA-256 해시 100% MATCH 확인 완료</li>
             <li class="checked">✓ <strong>비밀값 및 실명:</strong> 타인 실명 0건, 비밀값 0건 준수</li>
           </ul>

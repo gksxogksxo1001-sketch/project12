@@ -15,7 +15,7 @@ if (fs.existsSync(targetZip)) {
 }
 
 console.log('📦 Creating submission zip package via PowerShell...');
-const psCommand = `Compress-Archive -Path 'generator', 'inputs', 'doc', 'site-data.json', 'site-data.js', 'README.md', 'package.json' -DestinationPath '${ZIP_NAME}' -Force`;
+const psCommand = `$ProgressPreference = 'SilentlyContinue'; Compress-Archive -Path 'generator', 'inputs', 'doc', 'site-data.json', 'site-data.js', 'README.md', 'package.json' -DestinationPath '${ZIP_NAME}' -Force`;
 
 try {
   execSync(`powershell -Command "${psCommand}"`, { stdio: 'inherit' });
